@@ -98,8 +98,8 @@ class Game:
         """Generate new fruit."""
         return Fruit(
             position=(
-                random.randrange(1, (self.window_x // 10)) * 10,
-                random.randrange(1, (self.window_y // 10)) * 10,
+                random.randrange(1, (self.window_x // 10)) * 5,
+                random.randrange(1, (self.window_y // 10)) * 5,
             )
         )
 
@@ -129,7 +129,7 @@ class Game:
                 self.snake.body,
                 self.fruit.position,
                 self.game_window,
-                Color.GREEN.value,
+                Color.RED.value,
                 Color.WHITE.value,
                 Color.BLACK.value,
             )
